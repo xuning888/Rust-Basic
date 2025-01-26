@@ -32,10 +32,6 @@ pub fn capitalize_first(input: &str) -> String {
 pub fn capitalize_words_vector(words: &[&str]) -> Vec<String> {
     let mut vector: Vec<String> = Vec::new();
     for x in words {
-        if x == &" " {
-            vector.push(x.to_string());
-            continue;
-        }
         let upcase = capitalize_first(x);
         vector.push(upcase);
     }
