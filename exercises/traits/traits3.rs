@@ -10,8 +10,12 @@
 
 // I AM NOT DONE
 
+use std::fmt::format;
+
 pub trait Licensed {
-    fn licensing_info(&self) -> String;
+    fn licensing_info(&self) -> String {
+        format!("Some information")
+    }
 }
 
 struct SomeSoftware {
